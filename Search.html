@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="">
+
+    <head>
+        <meta charset="utf-8">
+        <title>GEMA - Inicio</title>
+        <meta name="author" content="Javier Gómez Pazo">
+        <meta name="description" content="Example description">
+
+        <link rel="icon" type="image/x-icon" href="img/favicon.png" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+        <script src="js/jquery-3.4.1.min.js"></script>
+        <link rel="stylesheet" href="css/bootstrap.min.css" crossorigin="anonymous">
+        <link rel="stylesheet" href="css/bootstrap-theme.min.css" crossorigin="anonymous">
+        <script src="js/bootstrap.min.js" crossorigin="anonymous"></script>
+
+
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link href="fonts/fontawesome-free-5.12.1-web/css/fontawesome.css" rel="stylesheet">
+        <link href="fonts/fontawesome-free-5.12.1-web/css/brands.css" rel="stylesheet">
+        <link href="fonts/fontawesome-free-5.12.1-web/css/solid.css" rel="stylesheet">
+        <link rel="stylesheet" href="css/index.css" />
+        <link rel="stylesheet" href="css/search.css" />
+    </head>
+
+    <body>
+        <header>
+        </header>
+
+
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary py-3 pl-5" id="nav_principal">
+
+            <a class="navbar-brand ml-5" href="#" id="logo"><img src="img/logo.png" alt="logo" class="w-100 text-center" /></a>
+
+            <a class="navbar-brand" href="#" id="logo_phone"><img src="img/logo.png" alt="logo" class="w-100 text-center" /></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fas fa-align-justify"></i>
+            </button>
+
+            <div class="collapse navbar-collapse justify-content-center w-auto ml-5 row" id="navbarToggler">
+                <ul class="navbar-nav col-sm-8 justify-content-center">
+                    <li class="nav-item"><a href="index.html" class="nav-link active px-4 py-3">Home</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link px-4 py-3">Company</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link px-4 py-3">Movility</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link px-4 py-3">Search</a></li>
+                    <!--<li class="nav-item"><a href="#" class="nav-link px-4 py-3">Login</a></li>
+                    <li class="nav-item "><a href="#" class="btn  fa fa-user px-4 py-3"></a></li>
+                    <li class="nav-item dropdown"><a class="btn fa fa-search px-4 py-3" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></a>
+                        <form class="dropdown-menu p-2 form-inline w-100">
+                            <div class="row m-0 justify-content-center">
+                                <input type="text" class="form-control mr-sm-1 col-sm-7 mr-1" placeholder="Buscar..." />
+                                <button type="submit" class="btn btn-primary col-sm-4"><i class="fa fa-search"></i></button>
+                            </div>
+                        </form>
+                    </li>-->
+                </ul>
+                <ul class="navbar-nav pl-5 col-sm-4">
+                    <li class="nav-item"><a href="login.html" class="nav-link active px-4 py-3">Login</a></li>
+                    <li class="nav-item"><a href="SignUp.html" class="nav-link active px-4 py-3">Sign Up</a></li>
+                </ul>
+            </div>
+        </nav>
+
+
+        <main>
+
+            <section class="container px-4 pt-5">
+                <h1 class="mb-4">Search</h1>
+                <form class="form mt-5">
+
+
+
+
+                    <div class="input-group mb-3">
+                        <div class="input-group-prepend float-left">
+                            <select class="form-control" id="tipo_institucion">
+                                <option value="Empresa">Business</option>
+                                <option value="Institucion">Institution</option>
+                            </select>
+                        </div>
+
+                        <div  id="select_empresa">
+                            <div class="input-group">
+                                <select class="form-control" name="pais_empresa">
+                                    <option value="null"></option>
+                                </select>
+                            </div>
+                            <div class="input-group">
+                                <select class="form-control" name="especialidad_empresa">
+                                    <option value="null"></option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="float-right" id="select_institucion">
+                            <div class="input-group-prepend">
+                                <select class="form-control" name="pais_institucion">
+                                    <option value="null"></option>
+                                </select>
+                            </div>
+                            <div class="input-group-prepend">
+                                <select class="form-control" name="especialidad_institucion">
+                                    <option value="null"></option>
+                                </select>
+                            </div>
+                        </div>
+
+                    </div>
+
+
+
+                </form>
+            </section>
+            <section class="container p-4 pt-2" id="resultado">
+                <!--Budqueda empresa
+                <table class="table table-responsive table-striped overflow-auto w-100">
+                    <thead>
+                        <tr>
+                            <th scope="col">Nombre</th>
+                            <th scope="col">Pais</th>
+                            <th scope="col">Especialidad</th>
+                            <th scope="col">Tipo</th>
+                            <th scope="col">Descripcion</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">1</th>
+                            <td>Mark</td>
+                            <td>Otto</td>
+                            <td>@mdo</td>
+                            <td>@mdo</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">2</th>
+                            <td>Jacob</td>
+                            <td>Thornton</td>
+                            <td>@fat</td>
+                            <td>@fat</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">3</th>
+                            <td>Larry</td>
+                            <td>the Bird</td>
+                            <td>@twitter</td>
+                            <td>@twitter</td>
+                        </tr>
+                    </tbody>
+                </table>
+                -->
+
+
+                <table class="table table-responsive table-striped overflow-auto w-100">
+                    <thead>
+
+                    </thead>
+                    <tbody>
+                  
+                    </tbody>
+                </table>
+
+                <div class="mt-4">
+                    <ul class="nav nav-pills justify-content-end" id="ul_page">
+                    </ul>
+                </div>
+            </section>
+
+        </main>
+
+        <div id="btnTop" class="">
+            <button class="btn-primary btn m-2">
+                <i class="fa fa-arrow-up"></i>
+            </button>
+        </div>
+
+        <div id="bannerCookies" class="p-2">
+            <div class="row pt-4 px-5">
+                <div class="col-11">
+                    <p>Utilizamos cookies para garantizarle la mejor experiencia en nuestro sitio web. Para obtener más información, conocer las cookies utilizadas por el sitio web y eventualmente deshabilitarlas, acceda a la Política sobre cookies. Si continúa con la navegación en este sitio web, permite el uso de las cookies.</p>
+                </div>
+                <div class="col-1 m-0 p-0">
+                    <p id="cerrar" class="text-center"> <i class="fas fa-times"></i></p>
+                </div>
+            </div>
+        </div>
+
+        <footer class="px-5 bg-primary text-white pt-4 pb-3 m-0">
+            <div class="row mb-5">
+                <div class="col-sm mt-0" id="footer_botones">
+                    <a href="login.html"><button type="button" class="btn btn-outline-light mt-3">Login</button></a>
+                    <a href="SignUp.html"><button type="button" class="btn btn-warning mt-3">Sign Up</button></a>
+                </div>
+                <div class="w-25 mt-4 mb-3 col-sm justify-content-center"><a href="#"><img src="img/logo.png" alt="logo" class="w-100 text-center" /></a></div>
+                <div id="redessociales" class="mt-0 pt-0 mr-0 pr-0 col-sm text-right">
+
+                </div>
+            </div>
+
+            <div class="row m-0 p-0">
+                <ul class="nav col-sm-9 " id="ul_privacidad">
+                    <li class="nav-item my-auto">
+                        <a class="nav-link text-white pl-0" href="#">¿Quienes somos?</a>
+                    </li>
+                    <li class="nav-item my-auto">
+                        <a class="nav-link text-white" href="#">Politica de Cookies</a>
+                    </li>
+                    <li class="nav-item my-auto">
+                        <a class="nav-link text-white" href="#">Politica de Privacidad</a>
+                    </li>
+                </ul>
+
+                <ul class="nav col-sm-3 justify-content-center " id="redessociales">
+                    <li class="nav-item">
+                        <a class="nav-link text-white pl-0" href="#"><i class="fab fa-twitter-square"></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white pl-0" href="#"><i class="fab fa-facebook-square"></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white pl-0" href="#"><i class="fab fa-instagram-square"></i></a>
+                    </li>
+                </ul>
+            </div>
+            <div id="separator" class="mb-4 mx-auto"></div>
+
+            <div>
+                <p class="mb-0 mt-2" id="copyright">Copyright © 2020 Gema. All rights reserved.</p>
+
+            </div>
+        </footer>
+        <script type="text/javascript">
+            var page = 1;
+            $(document).scroll(function () {
+
+                var btn = $('#btnTop');
+                var home = $('#nav_principal');
+
+                if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+                    btn.fadeIn("slow");
+                } else {
+                    btn.fadeOut("slow");
+                }
+            });
+
+            $(document).ready(function () {
+                conexion();
+                loadPaises();
+                loadEspecialidad();
+                $("#tipo_institucion option").click(function () {
+                    if ($(this).val() == "Empresa") {
+                        $("#select_empresa").fadeIn();
+                        $("#select_institucion").fadeOut();
+                    } else {
+                        $("#select_empresa").fadeOut();
+                        $("#select_institucion").fadeIn();
+                    }
+                    page=1;
+                    mostrar();
+                });
+                $("select option").click(function(){
+                   mostrar(); 
+                });
+                $("#btnTop").click(backtoTop);
+                $("#cerrar").click(cerrarDivCookies); //cerrar div cookies
+            });
+
+            function backtoTop() {
+                $('body, html').animate({
+                    scrollTop: '0px'
+                }, 1000);
+            }
+
+            function conexion() {
+                var xhttp = new XMLHttpRequest();
+                xhttp.onreadystatechange = function () {
+                    if (this.readyState == 4 && this.status == 200) {
+                        var respuesta = (this.responseText);
+                        console.log(respuesta);
+                        if(respuesta=="true"){
+                            $('<tr><th scope="col">Nombre</th><th scope="col">Pais</th><th scope="col">Email</th><th scope="col">Telefono</th><th scope="col">Direccion</th><th scope="col">Codigo Postal</th><th scope="col">Web</th><th scope="col">Descripcion</th><th scope="col">Especialidad</th><th scope="col">Tipo</th><th scope="col">Vat</th></tr>').appendTo($("thead"));
+                            mostrar();
+                        }else{
+                            $('<tr><th scope="col">Nombre</th><th scope="col">Pais</th><th scope="col">Especialidad</th><th scope="col">Tipo</th></tr>').appendTo($("thead"));
+                          mostrar();  
+                        }
+                    }
+                };
+                xhttp.open("POST", "Actions.php", true);
+                xhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+                xhttp.send("function=comprobarSession_AJAX");
+
+            }
+
+            function cerrarDivCookies() {
+                var div = $("#bannerCookies");
+                div.fadeOut("slow");
+            }
+
+            function loadPaises() {
+                var xhttp = new XMLHttpRequest();
+                xhttp.onreadystatechange = function () {
+                    if (this.readyState == 4 && this.status == 200) {
+                        var paises = JSON.parse(this.responseText);
+                        console.log(paises);
+                        var select_socio = $("select[name='pais_empresa']");
+                        var select_institucion = $("select[name='pais_institucion']");
+                        for (var i = 0; i < paises.length; i++) {
+                            var option_socio = $("<option value='" + paises[i].id_pais + "'>" + paises[i].nombre + "</option>");
+                            option_socio.appendTo(select_socio);
+
+                            var option_institucion = $("<option value='" + paises[i].id_pais + "'>" + paises[i].nombre + "</option>");
+                            option_institucion.appendTo(select_institucion);
+                        }
+                                        $("select option").click(function(){
+                   mostrar(); 
+                });
+                    }
+                };
+                xhttp.open("POST", "Actions.php", true);
+                xhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+                xhttp.send("function=getPaises");
+
+            }
+
+            function loadEspecialidad() {
+                var xhttp = new XMLHttpRequest();
+                xhttp.onreadystatechange = function () {
+                    if (this.readyState == 4 && this.status == 200) {
+                        var paises = JSON.parse(this.responseText);
+                        console.log(paises);
+                        var select_socio = $("select[name='especialidad_empresa']");
+                        var select_institucion = $("select[name='especialidad_institucion']");
+                        for (var i = 0; i < paises.length; i++) {
+                            var option_socio = $("<option value='" + paises[i].id_especialidad + "'>" + paises[i].tipo + "</option>");
+                            option_socio.appendTo(select_socio);
+
+                            var option_institucion = $("<option value='" + paises[i].id_especialidad + "'>" + paises[i].tipo + "</option>");
+                            option_institucion.appendTo(select_institucion);
+                        }
+                                        $("select option").click(function(){
+                   mostrar(); 
+                });
+                    }
+                };
+                xhttp.open("POST", "Actions.php", true);
+                xhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+                xhttp.send("function=getEspecialidad");
+
+            }
+
+            function mostrar() {
+                var tipo = $("#tipo_institucion").val();
+                var param= "function=mostrar_empresas&&tipo=" + tipo + "&&page=" + page;
+                if (tipo == "Empresa") {
+                    var especialidad = $("select[name='especialidad_empresa']").val();
+                    var pais = $("select[name='pais_empresa']").val();
+                    if (especialidad != "null") {
+                        page=1;
+                        param += "&&especialidad="+especialidad;
+                    }
+                    if (pais != "null") {
+                        page=1;
+                        param += "&&pais="+pais;
+                    }
+                }else{
+                    if (tipo == "Institucion") {
+                    var especialidad = $("select[name='especialidad_institucion']").val();
+                    var pais = $("select[name='pais_institucion']").val();
+                    if (especialidad != "null") {
+                        page=1;
+                        param += "&&especialidad="+especialidad;
+                    }
+                    if (pais != "null") {
+                        page=1;
+                        param += "&&pais="+pais;
+                    }
+                }
+            }
+
+                var xhttp = new XMLHttpRequest();
+                xhttp.onreadystatechange = function () {
+                    if (this.readyState == 4 && this.status == 200) {
+
+                        var aux = JSON.parse(this.responseText);
+                        console.log(aux);
+                        var table = $("table tbody");
+                        if (page === 1) {
+                            /* Engadimos o numero de paxinas */
+                            $("#ul_page").html("");
+                            for (var j = 1; j <= aux.number_page; j++) {
+                                if (page == j) {
+                                    $("<li class='nav-item'><a href='#' class='nav-link disabled pagina'>" + j + "</a></li>").appendTo($("#ul_page"));
+                                } else {
+                                    $("<li class='nav-item'><a href='#' class='nav-link pagina'>" + j + "</a></li>").appendTo($("#ul_page"));
+                                }
+                            }
+
+                            $(".pagina").click(function () {
+                                console.log($(this).html());
+                                page = $(this).html();
+                                $("#ul_page .disabled").removeClass("disabled");
+                                $(this).addClass("disabled");
+                                mostrar();
+
+                            });
+                            $("tbody").html("");
+                        } else {
+                            /*Eliminamos os td da anterior paxina*/
+                            var tr = $("tbody tr");
+                            tr.remove();
+
+                        }
+                        for (var i = 0; i < aux[0].length; i++) {
+                            var tr = $("<tr></tr>");
+                            for (var key in aux[0][i]) {
+                                if(aux[0][i][key]==null || aux[0][i][key]=='undefined'){
+                                    var td = $("<td>" + "" + "</td>");
+                                }else{
+                                    var td = $("<td>" + aux[0][i][key] + "</td>");
+                                }
+                                
+                                td.appendTo(tr);
+                            }
+                            tr.appendTo(table);
+                        }
+
+                        page++;
+                    }
+                };
+                xhttp.open("POST", "Actions.php", true);
+                xhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+                xhttp.send(param);
+
+            }
+        </script>
+    </body></html>

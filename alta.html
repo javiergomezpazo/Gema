@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+    <meta charset="utf-8">
+    <title>Login</title>
+    <meta name="author" content="Javier Gómez Pazo">
+    <meta name="description" content="Example description">
+    <link rel="icon" type="image/x-icon" href="img/favicon.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css" crossorigin="anonymous">
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/bootstrap.min.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="fonts/fontawesome-free-5.12.1-web/css/fontawesome.css" rel="stylesheet">
+    <link href="fonts/fontawesome-free-5.12.1-web/css/brands.css" rel="stylesheet">
+    <link href="fonts/fontawesome-free-5.12.1-web/css/solid.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/index.css" />
+    <link rel="stylesheet" href="css/signUp.css" />
+    <link rel="stylesheet" href="css/alta.css" />
+</head>
+
+<body>
+    <header>
+    </header>
+
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary py-3 pl-5" id="nav_principal">
+
+        <a class="navbar-brand ml-5" href="index.html" id="logo"><img src="img/logo.png" alt="logo" class="w-100 text-center" /></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse justify-content-center w-auto" id="navbarToggler">
+            <ul class="navbar-nav">
+                <li class="nav-item"><a href="index.html" class="nav-link active px-4 py-3">Home</a></li>
+                <li class="nav-item"><a href="#" class="nav-link px-4 py-3">Productos</a></li>
+                <li class="nav-item"><a href="#" class="nav-link px-4 py-3">Contacto</a></li>
+                <li class="nav-item"><a href="#" class="nav-link px-4 py-3">Pedidos</a></li>
+                <li class="nav-item"><a href="#" class="nav-link px-4 py-3">Login</a></li>
+                <li class="nav-item "><a href="#" class="btn  fa fa-user px-4 py-3"></a></li>
+                <li class="nav-item dropdown"><a class="btn fa fa-search px-4 py-3" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></a>
+                    <form class="dropdown-menu p-2 form-inline w-100">
+                        <div class="row m-0 justify-content-center">
+                            <input type="text" class="form-control mr-sm-1 col-sm-7 mr-1" placeholder="Buscar..." />
+                            <button type="submit" class="btn btn-primary col-sm-4"><i class="fa fa-search"></i></button>
+                        </div>
+                    </form>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+
+    <div id="btnTop" class="">
+        <button class="btn-primary btn m-2">
+            <i class="fa fa-arrow-up"></i>
+        </button>
+    </div>
+
+    <main>
+
+        <section class="container p-4 pt-5">
+            <h1 class="">Alta de Empresa/Alumno</h1>
+            <div id="formulario_container">
+                <div class="mt-4 mb-2">
+                    <ul class="nav nav-tabs justify-content-end">
+                        <li class="nav-item"><a class="nav-link disabled">Empresa</a></li>
+                        <li class="nav-item "><a class="nav-link ">Alumno</a></li>
+                    </ul>
+                </div>
+
+
+                <form class="form pt-4 pb-5 needs-validated" id="formEmpresa">
+                    <div class="form-group row text-left mx-auto">
+                        <label for="name" class="col-sm-4 col-form-label px-0">Name*</label>
+                        <input type="text" name="empresa_name" class="form-control col-sm-6" required />
+                        <div class="invalid-feedback">Example invalid feedback text</div>
+                    </div>
+                    <div class="form-group row text-left mx-auto">
+                        <label for="email" class="col-sm-4 col-form-label px-0">Email*</label>
+                        <input type="email" name="empresa_email" class="form-control col-sm-6" required />
+                    </div>
+                    <div class="form-group row text-left mx-auto">
+                        <label for="telephone" class="col-sm-4 col-form-label px-0">Telephone*</label>
+                        <input type="text" name="empresa_telephone" class="form-control col-sm-6" required />
+                    </div>
+                    <div class="form-group row text-left mx-auto">
+                        <label for="direccion" class="col-sm-4 col-form-label px-0">Direccion*</label>
+                        <input type="text" name="empresa_direccion" class="form-control col-sm-6" required />
+                    </div>
+                    <div class="form-group row text-left mx-auto">
+                        <label for="web" class="col-sm-4 col-form-label px-0">Web*</label>
+                        <input type="text" name="empresa_web" class="form-control col-sm-6" required />
+                    </div>
+                    <div class="form-group row text-left mx-auto">
+                        <label for="codigo_postal" class="col-sm-4 col-form-label px-0">Codigo Postal*</label>
+                        <input type="text" name="empresa_codigo_postal" class="form-control col-sm-6" required />
+                    </div>
+                    <div class="form-group row text-left mx-auto">
+                        <label for="vat" class="col-sm-4 col-form-label px-0">Description</label>
+                        <textarea name="empresa_description" class="form-control col-sm-6" rows="3"></textarea>
+                    </div>
+                    <div class="form-group row text-left mx-auto">
+                        <label for="tipo" class="col-sm-4 col-form-label px-0">Tipo*</label>
+                        <select name="empresa_tipo" class="custom-select col-sm-6" required>
+                        </select>
+                    </div>
+                    <div class="form-group row text-left mx-auto">
+                        <label for="vat" class="col-sm-4 col-form-label px-0">Vat</label>
+                        <input type="text" name="empresa_vat" class="form-control col-sm-6" />
+                    </div>
+                    <div class="form-group row text-left mx-auto">
+                        <label for="pais" class="col-sm-4 col-form-label px-0">Pais*</label>
+                        <select name="empresa_pais" class="custom-select col-sm-6" required>
+                        </select>
+                    </div>
+                    <h5 class="my-4 font_bold">Responsable</h5>
+                    <div class="form-group row text-left mx-auto">
+                        <label for="vat" class="col-sm-4 col-form-label px-0">Nombre*</label>
+                        <input type="text" name="name_reponsble" class="form-control col-sm-6" required />
+                    </div>
+                    <div class="form-group row text-left mx-auto">
+                        <label for="vat" class="col-sm-4 col-form-label px-0">Email*</label>
+                        <input type="text" name="email_reponsble" class="form-control col-sm-6" required />
+                    </div>
+                    <div class="form-group row text-left mx-auto">
+                        <label for="vat" class="col-sm-4 col-form-label px-0">Telephone</label>
+                        <input type="text" name="telephone_reponsble" class="form-control col-sm-6" />
+                    </div>
+                    <div class="form-group row text-left mx-auto">
+                        <label for="vat" class="col-sm-4 col-form-label px-0">*Cargo</label>
+                        <input type="text" name="cargo_responsable_empresa" class="form-control col-sm-6" />
+                    </div>
+
+                    <button type="submit" class="btn btn-primary mt-2" id="send" name="send">Send</button>
+                </form>
+
+
+
+                <form class="form pt-4 pb-5 needs-validated" id="formAlumnos">
+                    <div class="form-group row text-left mx-auto">
+                        <label for="name" class="col-sm-4 col-form-label px-0">Name*</label>
+                        <input type="text" name="name_alumno" class="form-control col-sm-6" required />
+                    </div>
+                    <div class="form-group row text-left mx-auto">
+                        <label for="genero" class="col-sm-4 col-form-label px-0">Genero*</label>
+                        <select name="genero_alumno" class="custom-select col-sm-6" required>
+                            <option value="M">Man</option>
+                            <option value="F">Female</option>
+                        </select>
+                    </div>
+                    <div class="form-group row text-left mx-auto">
+                        <label for="fecha_nacimiento" class="col-sm-4 col-form-label px-0">Fecha nacimiento*</label>
+                        <input type="date" name="fecha_nacimiento_alumno" class="form-control col-sm-6" required />
+                    </div>
+                    <div class="form-group row text-left mx-auto">
+                        <label for="vat" class="col-sm-4 col-form-label px-0">Vat</label>
+                        <input type="text" name="vat_alumno" class="form-control col-sm-6" />
+                    </div>
+
+                    <button type="submit" class="btn btn-primary mt-2" id="send" name="send">Send</button>
+                </form>
+            </div>
+            <div id="accion_realizada">
+                <p>Se ha registrado con exito en nuestra web. Acaba de recibir un email de bienvenida. Gracias por registrarse en Gema.</p>
+                <p>Acceda en <a href="login.html">Login</a> para conectarse.</p>
+            </div>
+        </section>
+
+    </main>
+
+
+
+    <footer class="px-5 bg-primary text-white pt-4 pb-3 m-0">
+        <div class="row mb-5">
+            <div class="col-sm mt-0" id="footer_botones">
+                <a href="login.html"><button type="button" class="btn btn-outline-light mt-3">Login</button></a>
+                <a href="SignUp.html"><button type="button" class="btn btn-warning mt-3">Sign Up</button></a>
+            </div>
+            <div class="w-25 mt-4 mb-3 col-sm justify-content-center"><a href="#"><img src="img/logo.png" alt="logo" class="w-100 text-center" /></a></div>
+            <div id="redessociales" class="mt-0 pt-0 mr-0 pr-0 col-sm text-right">
+
+            </div>
+        </div>
+
+        <div class="row m-0 p-0">
+            <ul class="nav col-sm-9 " id="ul_privacidad">
+                <li class="nav-item my-auto">
+                    <a class="nav-link text-white pl-0" href="#">¿Quienes somos?</a>
+                </li>
+                <li class="nav-item my-auto">
+                    <a class="nav-link text-white" href="#">Politica de Cookies</a>
+                </li>
+                <li class="nav-item my-auto">
+                    <a class="nav-link text-white" href="#">Politica de Privacidad</a>
+                </li>
+            </ul>
+
+            <ul class="nav col-sm-3 justify-content-center " id="redessociales">
+                <li class="nav-item">
+                    <a class="nav-link text-white pl-0" href="#"><i class="fab fa-twitter-square"></i></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white pl-0" href="#"><i class="fab fa-facebook-square"></i></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white pl-0" href="#"><i class="fab fa-instagram-square"></i></a>
+                </li>
+            </ul>
+        </div>
+        <div id="separator" class="mb-4 mx-auto"></div>
+
+        <div>
+            <p class="mb-0 mt-2" id="copyright">Copyright © 2020 Gema. All rights reserved.</p>
+
+        </div>
+    </footer>
+    <script src="js/signup.js"></script>
+    <script type="text/javascript">
+        $(document).scroll(function() {
+
+            var btn = $('#btnTop');
+            var home = $('#nav_principal');
+
+            if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+                btn.fadeIn("slow");
+            } else {
+                btn.fadeOut("slow");
+            }
+        });
+
+        $(document).ready(function() {
+            loadTipos();
+            loadPaises();
+            $("#btnTop").click(backtoTop);
+            $("#formEmpresa").submit(function() {
+                sendDataEmpresa();
+            });
+            $("#formAlumnos").submit(function() {
+                sendDataAlumnos();
+            });
+            $("#formulario_container a").click(function() {
+                var a = $(this);
+                if (a.html() == "Empresa") {
+                    $("#formEmpresa").fadeIn();
+                    $("#formAlumnos").fadeOut();
+                    $("ul .disabled").removeClass("disabled")
+                    a.addClass("disabled");
+                } else {
+                    $("#formEmpresa").fadeOut();
+                    $("#formAlumnos").fadeIn();
+                    $("ul .disabled").removeClass("disabled")
+                    a.addClass("disabled");
+                }
+            });
+        });
+
+        function backtoTop() {
+            $('body, html').animate({
+                scrollTop: '0px'
+            }, 1000);
+        }
+
+        function sendDataEmpresa() {
+            console.log(1);
+            event.preventDefault();
+            var name = $("input[name='empresa_name']").val();
+            var email = $("input[name='empresa_email']").val();
+            var telephone = $("input[name='empresa_telephone']").val();
+            var direccion = $("input[name='empresa_direccion']").val();
+            var web = $("input[name='empresa_web']").val();
+            var codigo_postal = $("input[name='empresa_codigo_postal']").val();
+            var description = $("input[name='empresa_description']").val();
+            var vat = $("input[name='empresa_vat']").val();
+            var tipo = $("select[name='empresa_tipo']").val();
+            var pais = $("select[name='empresa_pais']").val();
+            var name_responsable = $("input[name='name_reponsble']").val();
+            var email_responsable = $("input[name='email_reponsble']").val();
+            var telephone_responsable = $("input[name='telephone_reponsble']").val();
+            var cargo_responsable = $("input[name='cargo_responsable_empresa']").val();
+            var xhttp = new XMLHttpRequest();
+            xhttp.onreadystatechange = function() {
+                if (this.readyState == 4 && this.status == 200) {
+                    console.log(this.responseText);
+                    if (this.responseText === "false") {
+                        alert("error");
+                    }
+                }
+            };
+            xhttp.open("POST", "Actions.php", true);
+            xhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+            xhttp.send("function=alta&&class=Empresa" + "&&empresa_name=" + name + "&&empresa_email=" + email + "&&empresa_telephone=" + telephone + "&&empresa_direccion=" + direccion + "&&empresa_web=" + web + "&&empresa_codigo_postal=" + codigo_postal + "&&empresa_description=" + description + "&&empresa_vat=" + vat + "&&empresa_tipo=" + tipo + "&&empresa_pais=" + pais + "&&name_reponsble=" + name_responsable + "&&email_reponsble=" + email_responsable + "&&telephone_reponsble=" + telephone_responsable + "&&cargo_responsable_empresa=" + cargo_responsable);
+        }
+
+        function loadPaises() {
+            var xhttp = new XMLHttpRequest();
+            xhttp.onreadystatechange = function() {
+                if (this.readyState == 4 && this.status == 200) {
+                    var paises = JSON.parse(this.responseText);
+                    console.log(paises);
+                    var select_socio = $("select[name='empresa_pais']");
+                    for (var i = 0; i < paises.length; i++) {
+                        var option_socio = $("<option value='" + paises[i].id_pais + "'>" + paises[i].nombre + "</option>");
+                        option_socio.appendTo(select_socio);
+
+                    }
+                }
+            };
+            xhttp.open("POST", "Actions.php", true);
+            xhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+            xhttp.send("function=getPaises");
+
+        }
+
+        function sendDataAlumnos() {
+            console.log(1);
+            event.preventDefault();
+            var name = $("input[name='name_alumno']").val();
+            var vat = $("input[name='vat_alumno']").val();
+            var fecha_nacimiento = $("input[name='fecha_nacimiento_alumno_alumno']").val();
+            var genero = $("select[name='genero_alumno']").val();
+            var xhttp = new XMLHttpRequest();
+            xhttp.onreadystatechange = function() {
+                if (this.readyState == 4 && this.status == 200) {
+                    console.log(this.responseText);
+                    if (this.responseText === "false") {
+                        alert("error");
+                    }
+                }
+            };
+            xhttp.open("POST", "Actions.php", true);
+            xhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+            xhttp.send("function=alta&&class=Alumno" + "&&name_alumno=" + name + "&&vat_alumno=" + vat + "&&genero_alumno=" + genero + "&&fecha_nacimiento_alumno=" + fecha_nacimiento);
+        }
+
+        function loadTipos() {
+            var xhttp = new XMLHttpRequest();
+            xhttp.onreadystatechange = function() {
+                if (this.readyState == 4 && this.status == 200) {
+                    var tipos = JSON.parse(this.responseText);
+                    console.log(tipos);
+                    var select = $("select[name='empresa_tipo']");
+                    for (var i = 0; i < tipos.length; i++) {
+                        var option = $("<option value='" + tipos[i].ID_TIPO_INSTITUCION + "'>" + tipos[i].tipo + "</option>");
+                        option.appendTo(select);
+                    }
+                }
+            };
+            xhttp.open("POST", "Actions.php", true);
+            xhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+            xhttp.send("function=getTipo_Institucion");
+
+        }
+    </script>
+</body></html>
+

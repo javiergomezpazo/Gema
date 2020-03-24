@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html lang="">
+
+    <head>
+        <meta charset="utf-8">
+        <title>GEMA - Inicio</title>
+        <meta name="author" content="Javier Gómez Pazo">
+        <meta name="description" content="Example description">
+
+        <link rel="icon" type="image/x-icon" href="img/favicon.png" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <script src="js/jquery-3.4.1.min.js"></script>
+        <link rel="stylesheet" href="css/bootstrap.min.css" crossorigin="anonymous">
+        <link rel="stylesheet" href="css/bootstrap-theme.min.css" crossorigin="anonymous">
+        <script src="js/bootstrap.min.js" crossorigin="anonymous"></script>
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link href="fonts/fontawesome-free-5.12.1-web/css/fontawesome.css" rel="stylesheet">
+        <link href="fonts/fontawesome-free-5.12.1-web/css/brands.css" rel="stylesheet">
+        <link href="fonts/fontawesome-free-5.12.1-web/css/solid.css" rel="stylesheet">
+        <link rel="stylesheet" href="css/index.css" />
+        <link rel="stylesheet" href="css/perfil.css" />
+
+    </head>
+
+    <body>
+        <header>
+        </header>
+
+
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary py-3 pl-5" id="nav_principal">
+
+            <a class="navbar-brand ml-5" href="#" id="logo"><img src="img/logo.png" alt="logo" class="w-100 text-center" /></a>
+
+            <a class="navbar-brand" href="#" id="logo_phone"><img src="img/logo.png" alt="logo" class="w-100 text-center" /></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fas fa-align-justify"></i>
+            </button>
+
+            <div class="collapse navbar-collapse justify-content-center w-auto ml-5 row" id="navbarToggler">
+                <ul class="navbar-nav col-sm-8 justify-content-center">
+                    <li class="nav-item"><a href="index.html" class="nav-link active px-4 py-3">Home</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link px-4 py-3">Company</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link px-4 py-3">Movility</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link px-4 py-3">Search</a></li>
+                    <!--<li class="nav-item"><a href="#" class="nav-link px-4 py-3">Login</a></li>
+                    <li class="nav-item "><a href="#" class="btn  fa fa-user px-4 py-3"></a></li>
+                    <li class="nav-item dropdown"><a class="btn fa fa-search px-4 py-3" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></a>
+                        <form class="dropdown-menu p-2 form-inline w-100">
+                            <div class="row m-0 justify-content-center">
+                                <input type="text" class="form-control mr-sm-1 col-sm-7 mr-1" placeholder="Buscar..." />
+                                <button type="submit" class="btn btn-primary col-sm-4"><i class="fa fa-search"></i></button>
+                            </div>
+                        </form>
+                    </li>-->
+                </ul>
+                <ul class="navbar-nav pl-0 col-sm-4" id="ul_connect">
+                    <li class="nav-item"><a href="login.html" class="nav-link  pl-4 pr-0 py-3"><button type="button" class="btn btn-outline-light">Login</button></a></li>
+                    <li class="nav-item"><a href="SignUp.html" class="nav-link  pl-4 pr-0 py-3"><button type="button" class="btn btn-warning">Sign Up</button></a></li>
+                </ul>
+            </div>
+        </nav>
+
+
+
+
+        <main class="container p-4 pt-5">
+            <div id="menu_panel">
+                <ul class="nav nav-tabs">
+                    <li class="nav-item">
+                        <p class="nav-link disabled m-0" id="perfil">Perfil</p>
+                    </li>
+                    <li class="nav-item">
+                        <p class="nav-link m-0" id="editar_perfil">Editar perfil</p>
+                    </li>
+                    <li class="nav-item">
+                        <p class="nav-link m-0" id="mensajes">Peticiones</p>
+                    </li>
+                </ul>
+            </div>
+
+            <section id="section_perfil">
+
+                <div class="row mt- mx-auto mt-4" >
+                    <div class="col-sm-4 my-auto" id="imagen">
+                        <img src="img/img_profile.jpg" alt="img_profile" class="w-100 rounded"/>
+                    </div>
+                    <div class="col-sm  mt-3 ">
+                        <div class="row mb-3 mx-auto" id="name_socio">
+                            <p class="col-sm my-auto font-weight-bold">Name</p>
+                            <p class="col-sm my-auto" ></p>
+                        </div>                    
+                        <div class="row mb-3 mx-auto" id="email_socio">
+                            <p class="col-sm my-auto font-weight-bold">Email</p>
+                            <p class="col-sm my-auto"></p>
+                        </div>
+                        <div class="row mb-3 mx-auto" id="telefono_socio">
+                            <p class="col-sm my-auto font-weight-bold">Tlf</p>
+                            <p class="col-sm my-auto"></p>
+                        </div>
+                        <div class="row mb-3 mx-auto" id="cargo_socio">
+                            <p class="col-sm my-auto font-weight-bold">Cargo</p>
+                            <p class="col-sm my-auto"></p>
+                        </div> 
+                        <div class="row mb-3 mx-auto" id="departamento_socio">
+                            <p class="col-sm my-auto font-weight-bold">Departamento</p>
+                            <p class="col-sm my-auto"></p>
+                        </div>
+                        <div class="row mb-3 mx-auto" id="puntuacion_socio">
+                            <p class="col-sm my-auto font-weight-bold">Puntuacion</p>
+                            <p class="col-sm my-auto font-weight-bold text-danger"></p>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="mt-4 mx-auto">
+                    <h4 class="border-bottom">Institucion</h4>
+                    <div class=" mt-3 ">
+                        <div class="row mb-3 mx-auto" id="nombre_institucion">
+                            <p class="col-sm my-auto font-weight-bold">Name</p>
+                            <p class="col-sm my-auto"></p>
+                        </div>                    
+                        <div class="row mb-3 mx-auto" id="vat_institucion">
+                            <p class="col-sm my-auto font-weight-bold">VAT</p>
+                            <p class="col-sm my-auto"></p>
+                        </div>
+                        <div class="row mb-3 mx-auto" id="tlf_institucion">
+                            <p class="col-sm my-auto font-weight-bold">Tlf</p>
+                            <p class="col-sm my-auto"></p>
+                        </div>
+                        <div class="row mb-3 mx-auto" id="email_institucion">
+                            <p class="col-sm my-auto font-weight-bold">Email</p>
+                            <p class="col-sm my-auto"></p>
+                        </div> 
+                        <div class="row mb-3 mx-auto" id="direccion_institucion">
+                            <p class="col-sm my-auto font-weight-bold">Direccion</p>
+                            <p class="col-sm my-auto"></p>
+                        </div>
+                        <div class="row mb-3 mx-auto" id="web_institucion">
+                            <p class="col-sm my-auto font-weight-bold">Web</p>
+                            <p class="col-sm my-auto"></p>
+                        </div>
+                        <div class="row mb-3 mx-auto" id="descripcion_institucion">
+                            <p class="col-sm my-auto font-weight-bold">Descripcion</p>
+                            <p class="col-sm my-auto"></p>
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+
+
+            <section id="section_editar_perfil">
+                <form class="form pt-4 pb-5 needs-validated" id="formSocio">
+                    <div class="form-group row text-left mx-auto">
+                        <label for="username" class="col-sm-4 col-form-label px-0">User name*</label>
+                        <input type="text" name="usuario_socio" class="form-control col-sm-6" disabled />
+                    </div>
+                    <div class="form-group row text-left mx-auto">
+                        <label for="password" class="col-sm-4 col-form-label px-0">Password*</label>
+                        <input type="password" name="password_socio" class="form-control col-sm-6"  />
+                    </div>
+                    <div class="form-group row text-left mx-auto">
+                        <label for="name" class="col-sm-4 col-form-label px-0">Name*</label>
+                        <input type="text" name="name_socio" class="form-control col-sm-6"  />
+                    </div>
+                    <div class="form-group row text-left mx-auto">
+                        <label for="telephone" class="col-sm-4 col-form-label px-0">Telephone*</label>
+                        <input type="text" name="telephone_socio" class="form-control col-sm-6"  />
+                    </div>
+                    <div class="form-group row text-left mx-auto">
+                        <label for="cargo" class="col-sm-4 col-form-label px-0">Cargo*</label>
+                        <input type="text" name="cargo_socio" class="form-control col-sm-6"  />
+                    </div>
+                    <div class="form-group row text-left mx-auto">
+                        <label for="departamento" class="col-sm-4 col-form-label px-0">Departament*</label>
+                        <input type="text" name="departamento_socio" class="form-control col-sm-6"  />
+                    </div>
+                    <div class="form-group row text-left mx-auto">
+                        <label for="pais" class="col-sm-4 col-form-label px-0">Pais*</label>
+                        <select name="pais_socio" class="custom-select col-sm-6" >
+                        </select>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary mt-2" id="continue" name="continue">Update</button>
+                </form>
+            </section>
+
+            <section id="section_mensajes">
+
+                <div id="menu_section" class=" my-4 ">
+                    <ul class="nav nav justify-content-end">
+                        <li class="nav-item">
+                            <p class="nav-link active m-0 disabled">Bandeja de peticiones</p>
+                        </li>
+                        <li class="nav-item">
+                            <p class="nav-link active m-0">Redactar</p>
+                        </li>
+                    </ul>
+                </div>
+
+                <article id="mensajes_bandeja">
+
+
+                    <div id="mensajes_div">
+                       
+                        
+                    </div>
+                    
+                </article>
+                <article id="mensajes_redactar" class=" my-4">
+                    <form id="form_hacer_peticion">
+                        <div class="form-group">
+                            <input type="text" placeholder="Para: Administradores GEMA" class="form-control border-top-0 border-left-0 border-right-0 my-2" disabled />
+                            <input type="text" placeholder="Asunto" class="form-control border-top-0 border-left-0 border-right-0 my-2" name="asunto" />
+
+                            <div class="form-group">
+                                <textarea class="form-control" rows="3"></textarea>
+                            </div>
+                        </div>
+                        <input type="submit" value="Enviar" name="enviar" class="btn btn-primary" />
+                    </form>
+                </article>
+                <article id="mensaje_article" class="p-4">
+
+
+
+                </article>
+            </section>
+
+        </main>
+
+        <footer class="px-5 bg-primary text-white pt-4 pb-3 m-0">
+            <div class="row mb-5">
+                <div class="col-sm mt-0" id="footer_botones">
+                    <a href="login.html"><button type="button" class="btn btn-outline-light mt-3">Login</button></a>
+                    <a href="SignUp.html"><button type="button" class="btn btn-warning mt-3">Sign Up</button></a>
+                </div>
+                <div class="w-25 mt-4 mb-3 col-sm justify-content-center"><a href="#"><img src="img/logo.png" alt="logo" class="w-100 text-center" /></a></div>
+                <div id="redessociales" class="mt-0 pt-0 mr-0 pr-0 col-sm text-right">
+
+                </div>
+            </div>
+
+            <div class="row m-0 p-0">
+                <ul class="nav col-sm-9 " id="ul_privacidad">
+                    <li class="nav-item my-auto">
+                        <a class="nav-link text-white pl-0" href="#">¿Quienes somos?</a>
+                    </li>
+                    <li class="nav-item my-auto">
+                        <a class="nav-link text-white" href="#">Politica de Cookies</a>
+                    </li>
+                    <li class="nav-item my-auto">
+                        <a class="nav-link text-white" href="#">Politica de Privacidad</a>
+                    </li>
+                </ul>
+
+                <ul class="nav col-sm-3 justify-content-center " id="redessociales">
+                    <li class="nav-item">
+                        <a class="nav-link text-white pl-0" href="#"><i class="fab fa-twitter-square"></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white pl-0" href="#"><i class="fab fa-facebook-square"></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white pl-0" href="#"><i class="fab fa-instagram-square"></i></a>
+                    </li>
+                </ul>
+            </div>
+            <div id="separator" class="mb-4 mx-auto"></div>
+
+            <div>
+                <p class="mb-0 mt-2" id="copyright">Copyright © 2020 Gema. All rights reserved.</p>
+
+            </div>
+        </footer>
+        <script type="text/javascript">
+            $(document).scroll(function () {
+
+                var btn = $('#btnTop');
+                var home = $('#nav_principal');
+
+                if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+                    btn.fadeIn("slow");
+                } else {
+                    btn.fadeOut("slow");
+                }
+            });
+
+            $(document).ready(function () {
+                loadPaises();
+                loadSocio();
+                $("form").submit(function () {
+                    event.preventDefault();
+                });
+                $("#form_hacer_peticion").submit(function () {
+                    enviar_peticion();
+                });
+                $("#formSocio").submit(function () {
+                   updateSocio();
+                });
+                $("#btnTop").click(backtoTop);
+                $("#cerrar").click(cerrarDivCookies); //cerrar div cookies
+                $("#menu_panel p").click(mostrarSection);
+                $("#menu_section p").click(mostrarArticle);
+                
+            });
+
+            function backtoTop() {
+                $('body, html').animate({
+                    scrollTop: '0px'
+                }, 1000);
+            }
+
+            function cerrarDivCookies() {
+                var div = $("#bannerCookies");
+                div.fadeOut("slow");
+            }
+
+            function mostrarSection() {
+                var element = $(this);
+                console.log(element.html());
+                if (element.hasClass("disabled") === false) {
+                    if (element.html() == "Editar perfil") {
+                        $("#section_mensajes").fadeOut();
+                        $("#section_perfil").fadeOut();
+                        $("#section_editar_perfil").fadeIn();
+                    } else {
+                        if (element.html() == "Perfil") {
+                            $("#section_mensajes").fadeOut();
+                            $("#section_perfil").fadeIn();
+                            $("#section_editar_perfil").fadeOut();
+                        } else {
+                            cargarPeticiones();
+                            $("#section_mensajes").fadeIn();
+                            $("#section_perfil").fadeOut();
+                            $("#section_editar_perfil").fadeOut();
+                        }
+                    }
+                    $("#menu_panel .disabled").removeClass("disabled");
+                    element.addClass("disabled");
+                }
+            }
+
+            function botonRedactar() {
+                $("#mensajes_redactar").fadeIn();
+                $("#mensajes_bandeja").fadeOut();
+                var disabled = $("#menu_section .disabled");
+                var not_disabled = disabled.parent().next().children();
+                disabled.removeClass("disabled");
+                not_disabled.addClass("disabled");
+            }
+
+            function mostrarArticle() {
+                var element = $(this);
+                console.log(element.html());
+                if (element.hasClass("disabled") === false) {
+                    if (element.html() == "Bandeja de peticiones") {
+                        $("#mensajes_bandeja").fadeIn();
+                        $("#mensajes_redactar").fadeOut();
+                        $("#mensaje_article").fadeOut();
+                    } else {
+                        $("#mensajes_bandeja").fadeOut();
+                        $("#mensajes_redactar").fadeIn();
+                        $("#mensaje_article").fadeOut();
+                    }
+                    $("#menu_section .disabled").removeClass("disabled");
+                    element.addClass("disabled");
+                }
+            }
+
+
+            function loadPaises() {
+                var xhttp = new XMLHttpRequest();
+                xhttp.onreadystatechange = function () {
+                    if (this.readyState == 4 && this.status == 200) {
+                        var paises = JSON.parse(this.responseText);
+                        console.log(paises);
+                        var select_socio = $("select[name='pais_socio']");
+                        for (var i = 0; i < paises.length; i++) {
+                            var option_socio = $("<option value='" + paises[i].id_pais + "'>" + paises[i].nombre + "</option>");
+                            option_socio.appendTo(select_socio);
+
+                        }
+                    }
+                };
+                xhttp.open("POST", "Actions.php", true);
+                xhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+                xhttp.send("function=getPaises");
+
+            }
+            /*perfil*/
+/*editar perfil*/
+             function updateSocio() {
+            var user_socio = $("input[name='usuario_socio']").val();
+            var name_socio = $("input[name='name_socio']").val();
+            var telephone_socio = $("input[name='telephone_socio']").val();
+            var cargo_socio = $("input[name='cargo_socio']").val();
+            var departamento_socio = $("input[name='departamento_socio']").val();
+            var pais_socio = $("select[name='pais_socio']").val();
+
+            var xhttp = new XMLHttpRequest();
+            xhttp.onreadystatechange = function() {
+                if (this.readyState == 4 && this.status == 200) {
+                    console.log(this.responseText);
+                    if(this.responseText=="true"){
+                        location.reload();
+                    }
+                }
+            };
+            xhttp.open("POST", "Actions.php", true);
+            xhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+            xhttp.send("function=updateSocio" + "&&usuario_socio=" + user_socio +  "&&name_socio=" + name_socio  + "&&telephone_socio=" + telephone_socio + "&&cargo_socio=" + cargo_socio + "&&departamento_socio=" + departamento_socio + "&&pais_socio=" + pais_socio);
+        }
+            /*cargar datos*/
+
+            function loadSocio() {
+                var xhttp = new XMLHttpRequest();
+                xhttp.onreadystatechange = function () {
+                    if (this.readyState == 4 && this.status == 200) {
+                        var socio = JSON.parse(this.responseText);
+                        console.log(socio);
+                        p_datos(socio);
+                        input_datos(socio)
+                    }
+                };
+                xhttp.open("POST", "Actions.php", true);
+                xhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+                xhttp.send("function=getSocioProfile");
+
+            }
+
+            function p_datos(socio) {
+                /*socio*/
+                $("#name_socio p").last().html(socio[0]['nombre_socio']);
+                $("#telefono_socio p").last().html(socio[0]['telefono_socio']);
+                $("#email_socio p").last().html(socio[0]['email_socio']);
+                $("#cargo_socio p").last().html(socio[0]['CARGO']);
+                $("#departamento_socio p").last().html(socio[0]['DEPARTAMENTO']);
+                $("#puntuacion_socio p").last().html(socio[0]['PUNTUACION']);
+                /*empresa*/
+                $("#nombre_institucion p").last().html(socio[0]['nombre_institucion']);
+                $("#vat_institucion p").last().html(socio[0]['vat_institucion']);
+                $("#tlf_institucion p").last().html(socio[0]['telefono_institucion']);
+                $("#email_institucion p").last().html(socio[0]['email_institucion']);
+                $("#direccion_institucion p").last().html(socio[0]['DIRECCION']);
+                $("#web_institucion p").last().html(socio[0]['WEB']);
+                $("#descripcion_institucion p").last().html(socio[0]['DESCRIPCION']);
+            }
+
+            function input_datos(socio) {
+                /*socio*/
+                $("input[name='usuario_socio']").val(socio[0]['USUARIO']);
+                $("input[name='name_socio']").val(socio[0]['nombre_socio']);
+                $("input[name='email_socio']").val(socio[0]['email_socio']);
+                $("input[name='telephone_socio']").val(socio[0]['telefono_socio']);
+                $("input[name='cargo_socio']").val(socio[0]['CARGO']);
+                $("input[name='departamento_socio']").val(socio[0]['DEPARTAMENTO']);
+                $("input[name='vat_socio']").val(socio[0]['vat_socio']);
+
+                $("option[value=" + socio[0]['pais_socio'] + "]").attr("selected", "selected");
+
+            }
+
+            /*enviar_peticion*/
+
+            function enviar_peticion() {
+
+                var asunto = $("input[name='asunto']").val();
+                var cuerpo = $("textarea").val()
+                console.log(cuerpo);
+                var xhttp = new XMLHttpRequest();
+                xhttp.onreadystatechange = function () {
+                    if (this.readyState == 4 && this.status == 200) {
+                        Location.reload();
+                    }
+                };
+                xhttp.open("POST", "Actions.php", true);
+                xhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+                xhttp.send("function=insertRequest&&asunto=" + asunto + "&&cuerpo=" + cuerpo);
+            }
+
+            function updateStatus() {
+
+                var id_peticion = $("input[name='asunto']").val();
+                console.log(cuerpo);
+                var xhttp = new XMLHttpRequest();
+                xhttp.onreadystatechange = function () {
+                    if (this.readyState == 4 && this.status == 200) {
+                        Location.reload();
+                    }
+                };
+                xhttp.open("POST", "Actions.php", true);
+                xhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+                xhttp.send("function=updateStatus&&id=" + id_peticion + "&&estado=4");
+            }
+
+            function cargarPeticiones() {
+                var xhttp = new XMLHttpRequest();
+                xhttp.onreadystatechange = function () {
+                    if (this.readyState == 4 && this.status == 200) {
+                        var peticiones = JSON.parse(this.responseText);
+                        console.log(peticiones);
+                        for (var i = 0; i < peticiones.length; i++) {
+                            var div = $("<div class='mensaje row text-center mt-3 p-3'></div>)");
+                            $("<p class='col-sm my-auto'>" + peticiones[i].estado + "</p>").appendTo(div);
+                            $(" <p class='col-sm my-auto'>" + peticiones[i].ASUNTO + "</p>").appendTo(div);
+                            $("<p class='col-sm my-auto'>" + peticiones[i].FECHA + "</p>").appendTo(div);
+                            $("<p class='col my-auto' id='id_institucion'>" + peticiones[i].ID_PETICION + "</p>").appendTo(div);
+                            div.appendTo($("#mensajes_div"));
+                        }
+                         $('<button type="button" class="btn btn-primary my-4" id="redactar"><i class="fas fa-plus text-warning mr-2"></i> Redactar</button>').appendTo($("#mensajes_div"));
+                         $("#redactar").click(botonRedactar);
+                        $(".mensaje").click(function(){
+                            $("#mensajes_bandeja").fadeOut();
+                            $("#mensaje_article").fadeIn();
+                             var id= $($(this).children()[3]).html();
+                             $("#menu_section .disabled").removeClass("disabled");
+                             mostrarPeticion(id);
+                        });
+                    }
+                };
+                xhttp.open("POST", "Actions.php", true);
+                xhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+                xhttp.send("function=cargarMensajes");
+            }
+
+            function mostrarPeticion(id) {
+                var xhttp = new XMLHttpRequest();
+                xhttp.onreadystatechange = function () {
+                    if (this.readyState == 4 && this.status == 200) {
+                        var peticiones = JSON.parse(this.responseText);
+                        console.log(peticiones.length);
+                            var article = $("#mensaje_article");
+                            article.html("");
+                            $(" <h6 class='font-weight-bold mb-1 text-primary'>" + peticiones[0].ASUNTO + "</p>").appendTo(article);
+                            $("<p class='text-right mb-2 montserrat_extralight'>" + peticiones[0].FECHA + "</p>").appendTo(article);
+                            $("<p class='montserrat_light px-3'>" + peticiones[0].DESCRIPCION + "</p>").appendTo(article);
+                            if (peticiones[0].estado == "SOLICITADO") {
+                                $('<form class="mt-4" id="form_update_status"><div class="form-group form-check"><input type="checkbox" class="form-check-input" id="exampleCheck1" required><input type="hidden" name="id" value="' + peticiones[0].ID_PETICION + '"/><label class="form-check-label" for="exampleCheck1">Check me to cancel request</label>            </div>      <button type="submit" class="btn btn-primary">Update</button></form>').appendTo(article);
+                            }
+                        $("#form_update_status").submit(function(){
+        event.preventDefault();                    
+        updateEstado();
+                        });
+                       
+                    }
+                };
+                xhttp.open("POST", "Actions.php", true);
+                xhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+                xhttp.send("function=cargarMensajes&&id="+id);
+            }
+            
+            function updateEstado(){
+                var id=$("input[name='id']").val();
+               var xhttp = new XMLHttpRequest();
+                xhttp.onreadystatechange = function () {
+                    if (this.readyState == 4 && this.status == 200) {
+                        var respuesta = (this.responseText);
+                        console.log(respuesta);
+                        if(respuesta=="true"){
+                            location.reload();
+                        }
+                    }
+                };
+                xhttp.open("POST", "Actions.php", true);
+                xhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+                xhttp.send("function=updateStatus&&id="+id+"&&estado=4"); 
+            }
+            
+            
+            
+        </script>
+    </body></html>

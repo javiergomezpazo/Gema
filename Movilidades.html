@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+    <meta charset="utf-8">
+    <title>Login</title>
+    <meta name="author" content="Javier Gómez Pazo">
+    <meta name="description" content="Example description">
+    <link rel="icon" type="image/x-icon" href="img/favicon.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css" crossorigin="anonymous">
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/bootstrap.min.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="fonts/fontawesome-free-5.12.1-web/css/fontawesome.css" rel="stylesheet">
+    <link href="fonts/fontawesome-free-5.12.1-web/css/brands.css" rel="stylesheet">
+    <link href="fonts/fontawesome-free-5.12.1-web/css/solid.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/index.css" />
+    <link rel="stylesheet" href="css/movilidades.css" />
+</head>
+
+<body>
+    <header>
+    </header>
+
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary py-3 pl-5" id="nav_principal">
+
+        <a class="navbar-brand ml-5" href="index.html" id="logo"><img src="img/logo.png" alt="logo" class="w-100 text-center" /></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse justify-content-center w-auto" id="navbarToggler">
+            <ul class="navbar-nav">
+                <li class="nav-item"><a href="index.html" class="nav-link active px-4 py-3">Home</a></li>
+                <li class="nav-item"><a href="#" class="nav-link px-4 py-3">Productos</a></li>
+                <li class="nav-item"><a href="#" class="nav-link px-4 py-3">Contacto</a></li>
+                <li class="nav-item"><a href="#" class="nav-link px-4 py-3">Pedidos</a></li>
+                <li class="nav-item"><a href="#" class="nav-link px-4 py-3">Login</a></li>
+                <li class="nav-item "><a href="#" class="btn  fa fa-user px-4 py-3"></a></li>
+                <li class="nav-item dropdown"><a class="btn fa fa-search px-4 py-3" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></a>
+                    <form class="dropdown-menu p-2 form-inline w-100">
+                        <div class="row m-0 justify-content-center">
+                            <input type="text" class="form-control mr-sm-1 col-sm-7 mr-1" placeholder="Buscar..." />
+                            <button type="submit" class="btn btn-primary col-sm-4"><i class="fa fa-search"></i></button>
+                        </div>
+                    </form>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+
+    <div id="btnTop" class="">
+        <button class="btn-primary btn m-2">
+            <i class="fa fa-arrow-up"></i>
+        </button>
+    </div>
+
+    <main>
+
+        <section class="container p-4 pt-5">
+            <h1 class="mb-4">Movilidades</h1>
+            <p class="montserrat_extralight">Aquí puede realizar una movilidad de un alumno,el cual que usted haya dado de <a class="a" href="alta.html">alta</a> con anterioridad, con una empresa o institución.</p>
+
+            <form class="form pt-4 pb-5 needs-validated" id="form">
+                <p class="text-right mx-auto">Dicha accion consume 20 puntos.s</p>
+                <div class="form-group row text-left mx-auto">
+                    <label for="name" class="col-sm-4 col-form-label px-0">Student name*</label>
+                    <select name="alumno" class="custom-select col-sm-6" required>
+                    </select>
+                </div>
+
+                <div class="form-group row text-left mx-auto">
+                    <label for="genero" class="col-sm-4 col-form-label px-0">Business or Institution name*</label>
+                    <div class="input-group-prepend col-sm-6 p-0">
+                        <select class="custom-select col-sm-4" name="tipo">
+                            <option value="Empresa" selected>Business</option>
+                            <option value="Institucion">Institution</option>
+                        </select>
+                        <select class="custom-select col-sm-8" name="business_name">
+                        </select>
+                        <select class="custom-select col-sm-8" name="institution_name" id="select_instituciones">
+                        </select>
+                    </div>
+                </div>
+
+                <div class="form-group row text-left mx-auto">
+                    <label for="fecha_nacimiento" class="col-sm-4 col-form-label px-0">Fecha inicio*</label>
+                    <input type="date" name="fecha_inicio" class="form-control col-sm-6" required />
+                </div>
+                <div class="form-group row text-left mx-auto">
+                    <label for="fecha_nacimiento" class="col-sm-4 col-form-label px-0">Fecha fin estimado*</label>
+                    <input type="date" name="fecha_fin" class="form-control col-sm-6" required />
+                </div>
+                <div class="form-group form-check">
+                    <input type="checkbox" class="form-check-input" id="exampleCheck1" name="r_alojamiento">
+                    <label class="form-check-label" for="exampleCheck1">Alojamiento</label>
+                </div>
+
+                <button type="submit" class="btn btn-primary mt-2" id="send" name="send">Send</button>
+            </form>
+        </section>
+
+    </main>
+
+
+
+    <footer class="px-5 bg-primary text-white pt-4 pb-3 m-0">
+        <div class="row mb-5">
+            <div class="col-sm mt-0" id="footer_botones">
+                <a href="login.html"><button type="button" class="btn btn-outline-light mt-3">Login</button></a>
+                <a href="SignUp.html"><button type="button" class="btn btn-warning mt-3">Sign Up</button></a>
+            </div>
+            <div class="w-25 mt-4 mb-3 col-sm justify-content-center"><a href="#"><img src="img/logo.png" alt="logo" class="w-100 text-center" /></a></div>
+            <div id="redessociales" class="mt-0 pt-0 mr-0 pr-0 col-sm text-right">
+
+            </div>
+        </div>
+
+        <div class="row m-0 p-0">
+            <ul class="nav col-sm-9 " id="ul_privacidad">
+                <li class="nav-item my-auto">
+                    <a class="nav-link text-white pl-0" href="#">¿Quienes somos?</a>
+                </li>
+                <li class="nav-item my-auto">
+                    <a class="nav-link text-white" href="#">Politica de Cookies</a>
+                </li>
+                <li class="nav-item my-auto">
+                    <a class="nav-link text-white" href="#">Politica de Privacidad</a>
+                </li>
+            </ul>
+
+            <ul class="nav col-sm-3 justify-content-center " id="redessociales">
+                <li class="nav-item">
+                    <a class="nav-link text-white pl-0" href="#"><i class="fab fa-twitter-square"></i></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white pl-0" href="#"><i class="fab fa-facebook-square"></i></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white pl-0" href="#"><i class="fab fa-instagram-square"></i></a>
+                </li>
+            </ul>
+        </div>
+        <div id="separator" class="mb-4 mx-auto"></div>
+
+        <div>
+            <p class="mb-0 mt-2" id="copyright">Copyright © 2020 Gema. All rights reserved.</p>
+
+        </div>
+    </footer>
+    <script src="js/signup.js"></script>
+    <script type="text/javascript">
+        $(document).scroll(function() {
+
+            var btn = $('#btnTop');
+            var home = $('#nav_principal');
+
+            if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+                btn.fadeIn("slow");
+            } else {
+                btn.fadeOut("slow");
+            }
+        });
+
+        $(document).ready(function() {
+            loadInstituciones();
+            loadAlumnos();
+            loadEmpresas();
+            $("#btnTop").click(backtoTop);
+            $("#form").submit(function() {
+                sendData();
+            });
+            $("option").click(function() {
+                if ($(this).val() == "Empresa") {
+                    $("select[name='business_name']").fadeIn();
+                    $("select[name='institution_name']").fadeOut();
+                } else {
+                    $("select[name='business_name']").fadeOut();
+                    $("select[name='institution_name']").fadeIn();
+                }
+            });
+
+        });
+
+        function backtoTop() {
+            $('body, html').animate({
+                scrollTop: '0px'
+            }, 1000);
+        }
+        
+        function sendData() {
+        console.log(1);
+        event.preventDefault();
+        var alumno = $("select[name='alumno']").val();
+        var fecha_inicio = $("input[name='fecha_inicio']").val();
+        var r_alojamiento = $("input[type='checkbox']").prop( "checked" );
+        console.log(r_alojamiento);
+        var fecha_fin = $("input[name='fecha_fin']").val();
+        var tipo = $("select[name='tipo']").val();
+        var empresa = $("select[name='business_name']").val();
+        var institucion = $("select[name='institution_name']").val();
+        var tipo_institucion;
+        if (tipo == "Empresa") {
+            tipo_institucion = "Empresa";
+        } else {
+            tipo_institucion = "Institucion";
+        }
+        var xhttp = new XMLHttpRequest();
+        xhttp.onreadystatechange = function () {
+            if (this.readyState == 4 && this.status == 200) {
+                console.log(this.responseText);
+                if (this.responseText === "false") {
+                    alert("error");
+                }
+            }
+        };
+        xhttp.open("POST", "Actions.php", true);
+        xhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+        xhttp.send("function=movilidades&&institucion=" + tipo_institucion + "&&alumno=" + alumno + "&&fecha_fin=" + fecha_fin + "&&fecha_inicio=" + fecha_inicio + "&&business_name=" + empresa + "&&institution_name=" + institucion+"&&r_alojamiento="+r_alojamiento);
+    }
+    function loadEmpresas() {
+        var xhttp = new XMLHttpRequest();
+        xhttp.onreadystatechange = function () {
+            if (this.readyState == 4 && this.status == 200) {
+                var empresa = JSON.parse(this.responseText);
+                console.log(empresa.length);
+                var select = $("select[name='business_name']");
+                for (var i = 0; i < empresa.length; i++) {
+                    console.log(1);
+                    var option = $("<option value='" + empresa[i].id_empresa + "'>" + empresa[i].nombre + "</option>");
+                    option.appendTo(select);
+
+                }
+            }
+        };
+        xhttp.open("POST", "Actions.php", true);
+        xhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+        xhttp.send("function=getEmpresas");
+
+    }
+
+    function loadInstituciones() {
+        var xhttp = new XMLHttpRequest();
+        xhttp.onreadystatechange = function () {
+            if (this.readyState == 4 && this.status == 200) {
+                var empresa = JSON.parse(this.responseText);
+                console.log(empresa);
+                var select = $("select[name='institution_name']");
+                for (var i = 0; i < empresa.length; i++) {
+                    var option = $("<option value='" + empresa[i].id_institucion + "'>" + empresa[i].nombre + "</option>");
+                    option.appendTo(select);
+
+                }
+            }
+        };
+        xhttp.open("POST", "Actions.php", true);
+        xhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+        xhttp.send("function=getInstituciones");
+
+    }
+
+    function loadAlumnos() {
+        var xhttp = new XMLHttpRequest();
+        xhttp.onreadystatechange = function () {
+            if (this.readyState == 4 && this.status == 200) {
+                var empresa = JSON.parse(this.responseText);
+                console.log(empresa);
+                var select = $("select[name='alumno']");
+                for (var i = 0; i < empresa.length; i++) {
+                    var option = $("<option value='" + empresa[i].id_alumno + "'>" + empresa[i].NOMBRE_COMPLETO + "</option>");
+                    option.appendTo(select);
+
+                }
+            }
+        };
+        xhttp.open("POST", "Actions.php", true);
+        xhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+        xhttp.send("function=getAlumnos");
+
+    }
+    </script>
+</body></html>
