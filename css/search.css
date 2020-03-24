@@ -1,0 +1,21 @@
+
+#select_institucion{
+    display: none;
+}
+
+/* paginacion inferior */
+
+#resultado a.disabled {
+
+    background: #0093FF;
+    color: white;
+
+}
+
+#resultado li a:hover {
+
+    background: #0093FF;
+    color: white;
+    cursor: pointer;
+}
+

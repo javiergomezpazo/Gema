@@ -1,0 +1,175 @@
+/*fonts*/
+
+@font-face {
+    font-family: logo_1;
+    src: url("fonts/Beauty%20and%20the%20Beast%20Sample.otf");
+}
+
+@font-face {
+    font-family: logo_2;
+    src: url("fonts/Madame.ttf");
+}
+
+/************/
+body {
+    background: #353535;
+    font-family: monospace;
+}
+
+/*header*/
+
+#logo {
+    width: 25em;
+}
+
+/*****************************************/
+
+/*nav principal*/
+#nav_principal {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    background: #353535;
+}
+
+#nav_principal ul {
+    background: #353535;
+}
+
+#nav_principal a {
+    color: #ddd;
+}
+
+#nav_principal a:hover {
+    color: #36a51b;
+}
+
+#nav_principal .nav-tabs {
+    border-color: #36a51b;
+}
+
+#nav_principal .active {
+    background: none;
+    border-bottom: 2px solid #36a51b;
+}
+
+#nav_principal .nav-link:hover {
+    color: #ddd;
+    border: none;
+    border-bottom: 2px solid #36a51b;
+    border-color: #36a51b;
+}
+
+#nav_principal .btn {
+    color: #ddd;
+}
+
+#nav_principal .btn:hover {
+
+    color: #36a51b;
+}
+
+#nav_principal form {
+    background-color: #353535;
+}
+
+/***********************************************/
+/*separador*/
+
+#separator {
+    background: #ddd;
+    width: 55%;
+    height: 0.1em;
+    margin-top: 0.4em;
+    clear: left
+}
+
+/*************************************/
+
+/*main*/
+
+main h1{
+    color: #ddd;
+}
+
+/**/
+
+
+/*form*/
+main #pedido {
+    color: #ddd;
+}
+
+.rounded-circle {
+    background: #ddd;
+    padding: 5px;
+    width: 30px;
+    height: 32px;
+    margin-right: 8px;
+}
+
+.text-success {
+    color: #36a51b
+}
+
+.btn-success {
+    background: #36a51b;
+}
+
+/*********************************************/
+
+/*productos*/
+
+h3 {
+    color: #ddd;
+}
+
+.card {
+    width: 35em;
+}
+
+.card-title {
+    color: #36a51b;
+}
+
+.card img:hover {
+    cursor: pointer;
+    opacity: 0.8;
+    transition: transform;
+    transition-duration: 3s;
+}
+
+.card img:hover {
+    transform: scale(1.1);
+}
+
+#imagen {
+    height: 20em;
+}
+
+/***********************************/
+
+/*footer*/
+
+footer {
+    background: #36a51b;
+    width: 100%;
+    height: auto;
+    font-family: monospace;
+    /* border-top: 40px solid transparent;
+            border-image: url(imagenes/footer.png) 100 stretch;*/
+}
+
+footer button:hover {
+    opacity: 0.8;
+}
+
+footer #contacto {
+    color: #ddd;
+}
+
+footer #copyright {
+    clear: left;
+    background: #2c9512;
+    color: #353535;
+}

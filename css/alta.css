@@ -1,0 +1,20 @@
+/* Formulario container */
+#formAlumnos{
+    display: none;
+}
+/* ul */
+
+#formulario_container .nav-tabs .nav-link.disabled {
+
+    background: #0093FF;
+    color: white;
+
+}
+
+#formulario_container li a:hover {
+
+    background: #0093FF;
+    color: white;
+    cursor: pointer;
+}
+

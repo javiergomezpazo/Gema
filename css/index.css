@@ -1,0 +1,353 @@
+/*data*/
+
+/*color principal: #0093FF
+color secundari: 007bff*/
+
+/*fonts*/
+@font-face {
+    font-family: Montserrat-Regular;
+    src: url("../fonts/Montserrat-Regular.ttf");
+}
+
+@font-face {
+    font-family: Montserrat-ExtraLight;
+    src: url("../fonts/Montserrat-ExtraLight.ttf");
+}
+
+@font-face {
+    font-family: Montserrat-Light;
+    src: url("../fonts/Montserrat-Light.ttf");
+}
+
+@font-face {
+    font-family: Montserrat-Bold;
+    src: url("../fonts/Montserrat-Bold.ttf");
+}
+
+/*media-queries*/
+
+/*990px oculta nav*/
+
+@media (max-width: 850px) {
+
+    #phone {
+        display: flex;
+    }
+
+    #logo, #button_nav {
+        display: none;
+    }
+
+    #footer_botones{
+        text-align: center
+    }
+    
+    #ul_privacidad {
+        -ms-flex-pack: center;
+        justify-content: center
+    }
+
+    #copyright{
+        text-align: center;
+    }
+    
+     #paginas_footer {
+    text-align: center;
+    }
+    
+    #separatorarriba{
+        display: inline;
+    }
+
+}
+
+@media (min-width: 850px) {
+
+    #phone {
+        display: none;
+    }
+
+    #logo {
+        display: block;
+    }
+    
+        #footer_botones{
+        text-align: left;
+    }
+
+     #paginas_footer {
+    text-align: right;
+    }
+    
+    #separatorarriba{
+        display: none;
+    }
+
+}
+
+/********************************************************/
+
+/*clases propias*/
+
+.montserrat_extralight{
+    font-family: Montserrat-ExtraLight;
+}
+
+.montserrat_light{
+    font-family: Montserrat-Light;
+}
+
+.font_bold{
+    font-family: Montserrat-Bold;
+}
+
+/**********************************************************************/
+
+/*Edicion de clases predefinidas de Bootstrap*/
+
+.bg-primary {
+    background-color: #ddd;
+    background-color: #ddd;
+    background: #fff;
+}
+
+/***********************************************************/
+
+body {
+    background: #fff;
+    font-family: Montserrat-Regular;
+}
+
+/*banner cookies*/
+
+#bannerCookies {
+    position: fixed;
+    bottom: 0;
+    z-index: 100;
+    background: #DCE6ED
+}
+
+#cerrar {
+    font-size: 1.4em;
+}
+
+#cerrar:hover {
+    opacity: 0.7;
+    cursor: pointer;
+}
+
+/*header*/
+
+header {
+    background: #0093FF;
+}
+
+
+
+/***************************************/
+
+#logo {
+    width: 15%;
+}
+
+#logo_phone {
+    width: 35%;
+}
+
+#logo:hover,
+#logo_phone:hover {
+    background: none;
+}
+
+
+.navbar-toggler {
+    border: none;
+}
+
+.navbar-toggler:hover {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.navbar-toggler:focus {
+    border: none;
+}
+
+/*nav principal*/
+#nav_principal {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    font-size: 1.1em;
+}
+
+
+
+#nav_principal  #ul_principal a {
+    color: #fff;
+}
+
+#ul_principal a:hover {
+    background: #007bff;
+}
+
+#nav_principal .active {
+    background: #0093FF;
+}
+
+#nav_principal .nav-item:hover {
+    color: #ddd;
+}
+
+#nav_principal #ul_principal .btn:hover {
+    background: #007bff;
+}
+
+#nav_principal form {
+    background-color: #353535;
+}
+
+/*Botones login y sign up*/
+
+#nav_principal  #ul_connect li a {
+    color: #fff;
+}
+
+#ul_connect li:nth-of-type(1) button.btn:hover{
+    background: white;
+    color: #0093FF;
+}
+
+#log_out:hover{
+    cursor: pointer;
+}
+
+/*menu despegable*/
+
+.dropdown-item:focus, .dropdown-item:hover{
+    background: #ddd;
+}
+
+
+/**********************************************/
+
+/*carousel*/
+
+.carousel {
+    z-index: 0;
+}
+
+/************************************************/
+
+/*Seccion que es gema*/
+
+#leer_mas {
+    font-size: 3em;
+    height: auto;
+    color: #0093FF;
+    opacity: 0.5;
+}
+
+#leer_mas:hover {
+    opacity: 1;
+}
+
+
+/***********************************/
+#m {
+    background: #DCE6ED;
+    color: gray;
+}
+
+/**/
+.signika_linght {
+    font-size: 0.8em;
+}
+
+/*figue*/
+
+figure:hover {
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+figure:hover img {
+    transition: transform;
+    transition-duration: 2s;
+}
+
+figure img:hover {
+    transform: scale(1.2)
+}
+
+figure div {
+    height: auto
+}
+
+/***************************************/
+
+/*btn back to top*/
+
+#btnTop {
+    position: fixed;
+    z-index: 99;
+    bottom: 22px;
+    right: 22px;
+    display: none;
+}
+
+#btnTop button {
+    border: transparent;
+}
+
+#btnTop button:hover {
+  /*  background: #0093FF;*/
+    opacity: 0.9;
+    border: transparent;
+}
+
+/*****************/
+/*Footer*/
+
+#separator {
+    background: #ddd;
+    width: 100%;
+    height: 0.07em;
+    margin-top: 0.4em;
+    clear: left;
+}
+
+footer {
+    clear: right;
+}
+
+
+footer #copyright {
+    font-size: 0.8em;
+}
+
+#ul_privacidad a:hover{
+    opacity: 0.6;
+}
+
+/*list de paginas*/
+
+.list-group-item{
+    background: none;
+    border: none;
+}
+
+.list-group-item a{
+    color: white
+}
+
+/*Redes sociales*/;
+
+#redessociales a {
+    font-size: 1.7em;
+    opacity: 0.6;
+    border-radius: 5px;
+}
+
+#redessociales a:hover {
+    opacity: 1;
+}

@@ -1,0 +1,70 @@
+/*menu principal interno*/
+
+/* ul */
+
+#menu_panel .nav-tabs .nav-link.disabled {
+
+    background: #0093FF;
+    color: white;
+
+}
+
+#menu_panel li p:hover {
+
+    background: #0093FF;
+    color: white;
+    cursor: pointer;
+}
+
+/******/
+
+/*sections*/
+
+#section_mensajes, #section_editar_perfil{
+    display: none;
+}
+
+#section_perfil{
+    display: block;
+}
+
+#mensajes_div #id_institucion{
+    display: none;
+}
+
+/*section mensajes*/
+
+#menu_section li .disabled{
+    color: #0093FF;
+}
+
+#menu_section li:not(.disabled) p:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.mensaje{
+     border: 2px solid transparent;
+}
+
+.mensaje:nth-child(even){
+    background: #D0EBFF;
+}
+
+.mensaje:hover{
+    border-color:#ddd;
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+#mensajes_bandeja{
+    display: block;
+}
+
+#mensajes_redactar{
+    display: none;
+}
+
+textarea.form-control{
+    height: 15em;
+}
